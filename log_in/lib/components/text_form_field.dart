@@ -7,10 +7,15 @@ class TextFormFieldSample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool? alignLabelWithHint;
     return TextFormField(
+      textAlign: TextAlign.center,
       decoration: InputDecoration(
-        border: const UnderlineInputBorder(),
         labelText: txt,
+        prefixIcon: const Icon(Icons.email), //vpn_key
+        labelStyle: const TextStyle(
+          color: Colors.black87,
+        ),
       ),
     );
   }
